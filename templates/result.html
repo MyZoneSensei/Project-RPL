@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Mood Music Result</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Anda sedang</h1>
+        <div class="mood">{{ mood }}</div>
+        <a href="{{ url_for('home') }}" class="playlist-link">Kembali</a>
+        <a href="{{ playlist }}" class="playlist-link" target="_blank">Lihat Playlist</a>
+    </div>
+</body>
+</html>
